@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Deal Suite">
+<listeners>
+	<listener class-name="listener.MyTestNGListener"></listener>
+</listeners>
+  <test name="Create Lead Test">
+    <classes>
+    <class name="testcases.Session">
+      	<methods>
+      		<include name="doLogin"></include>
+      	</methods>
+      </class>
+      <class name="testcases.LeadManagement">
+      	<methods>
+      		<include name="createLead"></include>
+      		<include name="verifyLead"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Create Lead Test 1">
+    <classes>
+    <class name="testcases.Session">
+      	<methods>
+      		<include name="doLogin"></include>
+      	</methods>
+      </class>
+      <class name="testcases.CreateLead">
+      	<methods>
+      		<include name="createLead"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,18 @@
+GENERIC KEYWORDS
+openbrowser
+navigate
+click
+type
+select
+getText
+
+
+VALIDATION KEYWORDS
+validationTitle
+validateText
+validateElementPresent
+
+APPLICATION DEPENDENT KEYWORDS
+login
+selectDateFromCalendar
+veridyDealAdded
